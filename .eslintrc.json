@@ -1,3 +1,31 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "semi": [2, "never"],
+    "@typescript-eslint/semi": ["error", "never"],
+    "no-multiple-empty-lines": ["error", { "max": 2 }],
+    "import/prefer-default-export": "off",
+    "no-param-reassign": ["error", { "props": false }],
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".tsx"] }
+    ],
+    "import/no-unresolved": [0],
+    "max-len": [
+      2,
+      {
+        "code": 100,
+        "tabWidth": 2,
+        "ignoreUrls": true
+      }
+    ],
+    "indent": [2, 2]
+  }
 }
