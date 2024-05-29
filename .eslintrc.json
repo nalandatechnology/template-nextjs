@@ -7,6 +7,10 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
+  "ignorePatterns": [
+    "tailwind.config.ts",
+    "postcss.config.mjs"
+  ],
   "rules": {
     "semi": [2, "never"],
     "@typescript-eslint/semi": ["error", "never"],
